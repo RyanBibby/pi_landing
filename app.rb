@@ -4,4 +4,8 @@ class App < Sinatra::Application
     haml :index
   end
   
+  get "/application.css" do
+    sass :application
+  end
+  
 end

@@ -1,2 +1,25 @@
-%h1 I'm alive
-%h2 Pi
+!!!
+%html{ lang: "en" }
+  %head
+    %meta{ charset: "utf-8" }
+    %meta{ content: "IE=edge", "http-equiv" => "X-UA-Compatible" }
+    %meta{ content: "width=device-width, initial-scale=1", name: "viewport" }
+    %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" }
+    %link{ href: "application.css", rel: "stylesheet" }
+
+    %title Pi
+
+  %body
+    .container
+      .page-header
+        %h1 pi.ryanbibby.co.uk
+      %p.lead I'm alive and running
+      %p
+        %pre
+          = `df -h`.split("\n")[1]       
+
+
+    %footer.footer
+      .container
+        %p.text-muted Ryan Bibby
+
