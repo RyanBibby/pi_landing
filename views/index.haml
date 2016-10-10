@@ -6,6 +6,8 @@
     %meta{ content: "width=device-width, initial-scale=1", name: "viewport" }
     %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" }
     %link{ href: "application.css", rel: "stylesheet" }
+    %link{ rel: "icon", type: "image/png", href: "/favicon.png" }
+    
 
     %title Pi
 
@@ -14,8 +16,10 @@
       .page-header
         %h1 pi.ryanbibby.co.uk
       %p.lead I'm alive and running
+      - moo = `df -h`.split("\n")
       %p
         %pre
+
           = `df -h`.split("\n")[1]       
 
 
